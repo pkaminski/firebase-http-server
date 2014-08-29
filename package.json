@@ -1,6 +1,6 @@
 {
   "name": "firebase-http-server",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "author": "Piotr Kaminski <piotr@ideanest.com>",
   "description": "A command-line HTTP server configured by firebase.json.",
   "main": "./lib/firebase-http-server",
