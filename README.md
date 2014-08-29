@@ -1,48 +1,34 @@
-# http-server: a command-line http server
+# firebase-http-server: a command-line http server configured by firebase.json
 
-`http-server` is a simple, zero-configuration command-line http server.  It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
+`firebase-http-server` is a simple command-line http server that understands the firebase.json configuration file.  Perfect for development so you don't have to deploy to Firebase hosting every time.
 
-![](https://github.com/nodeapps/http-server/raw/master/screenshots/public.png)
+Based on [http-server](https://github.com/nodeapps/http-server).
 
 # Installing globally:
 
 Installation via `npm`.  If you don't have `npm` yet:
 
      curl https://npmjs.org/install.sh | sh
-     
+
 Once you have `npm`:
 
-     npm install http-server -g
-     
-This will install `http-server` globally so that it may be run from the command line.
+     npm install firebase-http-server -g
+
+This will install `firebase-http-server` globally so that it may be run from the command line.
 
 ## Usage:
 
-     http-server [path] [options]
+     firebasehttp-server [config_path] [options]
 
-`[path]` defaults to `./public` if the folder exists, and `./` otherwise.
-
-# Installing as a node app
-
-     mkdir myapp
-     cd myapp/
-     jitsu install http-server
-
-*If you do not have `jitsu` installed you can install it via `npm install jitsu -g`*
+`[config_path]` defaults to `./firebase.json`.
 
 ## Usage
 
-### Starting http-server locally
+### Starting firebase-http-server locally
 
-     node bin/http-server
+     node bin/firebase-http-server
 
 *Now you can visit http://localhost:8080 to view your server*
-
-### Deploy http-server to nodejitsu
-
-     jitsu deploy
-
-*You will now be prompted for a `subdomain` to deploy your application on*
 
 ## Available Options:
 
@@ -50,14 +36,8 @@ This will install `http-server` globally so that it may be run from the command 
 
 `-a` Address to bind to (defaults to '0.0.0.0')
 
-`-d` Show directory listings (defaults to 'True')
-
-`-i` Display autoIndex (defaults to 'True')
-
-`-e` or `--ext` Default file extension (defaults to 'html')
+`-r` Overrides the `firebase.json` root public directory to serve.
 
 `-s` or `--silent` In silent mode, log messages aren't logged to the console.
 
 `-h` or `--help` Displays a list of commands and exits.
-
-`-c` Set cache time (in seconds) for cache-control max-age header, e.g. -c10 for 10 seconds. To disable caching, use -c-1.

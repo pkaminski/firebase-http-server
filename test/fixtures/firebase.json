@@ -1,0 +1,41 @@
+{
+  "public": "root",
+  "ignore": [
+    "canYouSee*"
+  ],
+  "redirect": [
+    {
+      "source": "/from/**/*.@(js)",
+      "destination": "/to",
+      "type": 302
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/canYouSeeMe2",
+      "destination": "/file"
+    },
+    {
+      "source": "**/foo",
+      "destination": "/file"
+    },
+    {
+      "source": "**/bar/**",
+      "destination": "/missing"
+    }
+  ],
+  "headers": [
+    {
+      "source": "**/*.html",
+      "headers": [
+        {"key": "Cache-Control", "value": "max-age=7200"}
+      ]
+    },
+    {
+      "source": "/foo",
+      "headers": [
+        {"key": "Access-Control-Allow-Origin", "value": "*"}
+      ]
+    }
+  ]
+}
