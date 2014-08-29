@@ -18,17 +18,11 @@ This will install `firebase-http-server` globally so that it may be run from the
 
 ## Usage:
 
-     firebasehttp-server [config_path] [options]
+     firebase-http-server [config_path] [options]
 
 `[config_path]` defaults to `./firebase.json`.
 
-## Usage
-
-### Starting firebase-http-server locally
-
-     node bin/firebase-http-server
-
-*Now you can visit http://localhost:8080 to view your server*
+Now you can visit http://localhost:8080 to view your server.
 
 ## Available Options:
 
@@ -36,7 +30,7 @@ This will install `firebase-http-server` globally so that it may be run from the
 
 `-a` Address to bind to (defaults to '0.0.0.0')
 
-`-r` Overrides the `firebase.json` root public directory to serve.
+`-r` or `--root` Overrides the `firebase.json` root public directory to serve.
 
 `-s` or `--silent` In silent mode, log messages aren't logged to the console.
 
