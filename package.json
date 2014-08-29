@@ -1,8 +1,8 @@
 {
   "name": "firebase-http-server",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "author": "Piotr Kaminski <piotr@ideanest.com>",
-  "description": "emulator for http server configured with firebase.json",
+  "description": "An HTTP server that works like Firebase Hosting (using firebase.json)",
   "main": "./lib/firebase-http-server",
   "repository": {
     "type": "git",
@@ -10,7 +10,9 @@
   },
   "keywords": [
     "cli",
-    "command"
+    "command",
+    "Firebase",
+    "http"
   ],
   "scripts": {
     "start": "node ./bin/firebase-http-server",
