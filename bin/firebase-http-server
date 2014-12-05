@@ -7,12 +7,12 @@ var colors = require('colors'),
 
 if (argv.h || argv.help) {
   console.log([
-    'usage: firebase-http-server [path/to/firebase.js] [options]',
+    'usage: firebase-http-server [path/to/firebase.json] [options]',
     '',
     'options:',
     '  -p                 Port to use [8080]',
     '  -a                 Address to use [0.0.0.0]',
-    '  -r --root          Root public directory to serve (overrides firebase.js setting)',
+    '  -r --root          Root public directory to serve (overrides firebase.json setting)',
     '  -s --silent        Suppress log messages from output',
     '  -h --help          Print this list and exit.'
   ].join('\n'));

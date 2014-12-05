@@ -1,6 +1,6 @@
 {
   "name": "firebase-http-server",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "author": "Piotr Kaminski <piotr@ideanest.com>",
   "description": "A command-line HTTP server configured by firebase.json.",
   "main": "./lib/firebase-http-server",
@@ -55,16 +55,16 @@
     }
   ],
   "dependencies": {
-    "colors": "0.6.x",
-    "ecstatic": "0.4.x",
-    "minimatch": "^1.0.0",
-    "optimist": "0.5.x",
+    "colors": "^1.0",
+    "ecstatic": "^0.5",
+    "minimatch": "^2.0",
+    "optimist": "^0.6",
     "portfinder": "0.2.x",
-    "union": "0.3.x"
+    "union": "^0.4"
   },
   "devDependencies": {
-    "vows": "0.7.x",
-    "request": "2.21.x"
+    "vows": "^0.8",
+    "request": "^2.21"
   },
   "bugs": {
     "url": "https://github.com/pkaminski/firebase-http-server/issues"
