@@ -1,3 +1,7 @@
+# UNMAINTAINED
+
+You should use [superstatic](https://www.npmjs.com/package/superstatic) instead.
+
 # firebase-http-server: a command-line http server configured by firebase.json
 
 `firebase-http-server` is a simple command-line http server that understands the firebase.json configuration file.  Perfect for development so you don't have to deploy to Firebase hosting every time.
